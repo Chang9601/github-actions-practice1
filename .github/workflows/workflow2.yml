@@ -1,9 +1,9 @@
-name: Output Event Details on issues
+name: Output event details on issues
 
 on: issues
 
 jobs:
-  build:
+  output:
     name: output event details in shell via echo
     runs-on: ubuntu-latest
     steps:

@@ -1,9 +1,9 @@
-name: Lint, Test and Deploy on push
+name: Lint, test and deploy on push
 
 on: push
 
 jobs:
-  test:
+  deploy:
     name: run the lint, test and build scripts
     runs-on: ubuntu-latest
     steps:
@@ -26,3 +26,6 @@ jobs:
 
       - name: Run the build script
         run: npm run build
+
+      - name: Deploy
+        run: echo "Deploying..."
