@@ -4,7 +4,7 @@ on: push
 
 jobs:
   build:
-    name: Run the lint script
+    name: run the lint, test and build scripts
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
